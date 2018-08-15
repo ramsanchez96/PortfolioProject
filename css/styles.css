@@ -37,14 +37,9 @@ header {
 
 nav {
     display: flex;
+    color:white;
     justify-content: space-around;
     align-items: center;
-    color:white;
-}
-
-h1 {
-    font-size: 30px;
-    margin: 0;
 }
 
 nav a {
@@ -60,6 +55,34 @@ nav a.selected {
 
  nav a:hover {
     border-bottom:white solid 6px;
+}
+
+.backgroundHero {
+    width: 100%;
+    height: 500px;
+    background-image: url("../img/banner.jpg");
+    background-repeat: round;
+    /*img/banner.jpg*/
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    margin: 20px auto auto auto;
+    text-align: center;
+}
+
+.homeHeading {
+    font-size: 50px;
+    color: white;
+    margin:0;
+    background-color:rgba(63, 127, 191, 0.8);
+    padding: 50px;
+    border-radius: 100%;
+}
+
+span {
+    color:white;
+    font-weight: 400;
+    font-size: 30px;
 }
 
 /************
@@ -137,10 +160,12 @@ figure.hero {
 
 .mainHome > section > h3 {
     color:white;
+    min-height: 0;
 }
 
 .mainHome > section > p {
     color:white;
+    margin:  auto 12px 20px 12px;;
 }
 
 .homeButton {
@@ -152,7 +177,7 @@ figure.hero {
     border-radius: 15px;
     background-color: lightblue;
     padding: 10px;
-    margin: 0 0 5px 0;
+    margin: 10px;
     display: flex;
     align-items: center;
 
@@ -185,6 +210,13 @@ BIO
 .bioImg {
    width:100%;
    border-radius: 50px;
+   margin-top: 30px; 
+}
+
+.aboutMe {
+    font-weight: 700;
+    font-size: 40px;
+    margin: 0;
 }
 
 /************
@@ -192,12 +224,36 @@ RESUME
 *************/
 
 .mainResume {
-    margin: 50px 0 0 0;
     text-align: center;
+}
+
+.mainResume__heading {
+    margin-top: 100px;
+}
+
+.mainResume__heading > h2 {
+    font-size: 30px;
+    font-weight:700;
+}
+
+.resumeHeading3 {
+    font-size: 25px;
+    font-weight:700;
+}
+
+.resumeHeading4 {
+    font-size: 20px;
+    font-weight: 700;
 }
 
 ul {
     list-style-type: none;
+}
+
+.buttonWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .resumeButton {
@@ -209,8 +265,13 @@ ul {
     border-radius: 15px;
     background-color: lightblue;
     padding:10px;
-    margin: 0 0 20px 0;
+    margin-top: 20px;
+    display: block;
+    width:300px;
+    height:30PX
+    
 }
+
 
 /************
 GITHUB
