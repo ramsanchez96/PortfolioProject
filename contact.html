@@ -1,108 +1,116 @@
 <!DOCTYPE html>
 
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title>RAM Sanchez</title>
-        <link rel="outputheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
-        <link href="https://fonts.googleapis.com/css?family=Arimo" rel="stylesheet">
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/output.css">
 
-        <style>
-
-            footer {
-                position: fixed;
-                bottom:0;
+<head>
+    <meta charset="utf-8">
+    <title>RAM Sanchez</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Source+Sans+Pro" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/output.css">
+    <script>
+        function validateForm() {
+            var firstName = document.forms["mainForm"]["firstName"].value;
+            var lastName = document.forms["mainForm"]["lastName"].value;
+            var email = document.forms["mainForm"]["email"].value;
+            if (firstName === "") {
+                alert("First Name must be filled out");
+                return false;
+            } else if (lastName === "") {
+                alert("Last Name must be filled out");
+                return false;
+            } else if (email === "") {
+                alert("Email must be filled out");
+                return false;
             }
-
-        </style>
-
-<script>
-    function validateForm() {
-        var firstName = document.forms["mainForm"]["firstName"].value;
-        var lastName = document.forms["mainForm"]["lastName"].value;
-        var email = document.forms["mainForm"]["email"].value;
-        if (firstName === "") {
-            alert("First Name must be filled out");
-            return false;
-        }else if (lastName === ""){
-            alert("Last Name must be filled out");
-            return false;
-        }else if (email === ""){
-            alert("Email must be filled out");
-            return false;
         }
-    }
-</script>
+    </script>
+</head>
 
-    </head>
+<body class="contactBody">
+    <header class="header">
+        <nav class="header__nav">
+            <ul class="nav__ul">
+                <li>
+                    <a href="#">
+                        <h1 class="ul--headingOne">RAM Sanchez</h1>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="selected">Home</a>
+                </li>
+                <li>
+                    <a href="bio.html">Bio</a>
+                </li>
+                <li>
+                    <a href="work.html">Work</a>
+                </li>
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
 
-    <body class="contactBody">
-        <header>
-            <nav>
-                <a href="index.html"><h1>RAM Sanchez</h1></a>
-                <a href="index.html">Home</a>
-                <a href="bio.html">Bio</a>
-                <a href="resume.html">Résumé</a>
-                <a href="github.html">GitHub</a>
-                <a href="gallery.html">Gallery</a>
-                <a href="contact.html" class="selected">Contact</a> 
-            </nav>
-        </header>
+    <main class="mainForm">
 
-        <main class="mainForm">
+        <form action="#" method="POST" name="mainForm" onsubmit="return validateForm()">
+            <h3 class="whiteText">Contact Me:</h3>
 
-            <form action="#" method="POST" name="mainForm" onsubmit="return validateForm()">
-                <h3 class="whiteText">Contact Me:</h3>
+            <!-- first name -->
+            <div>
+                <label for="firstName" class="whiteText">First Name:</label>
+                <input type="text" id="firstName" name="firstName" placeholder="First Name">
+            </div>
 
-                <!-- first name -->
-                <div>
-                    <label for="firstName" class="whiteText">First Name:</label>
-                    <input type="text" id="firstName" name="firstName" placeholder="First Name" >
-                </div>
-                
-                <!-- last name --> 
-                <div class="formLastName">
-                    <label for="lastName" class="whiteText">Last Name:</label>
-                    <input type="text" id="lastName" name="lastName" placeholder="Last Name" >
-                </div>
-                
-                <!-- email -->
-                <div class="formEmail">
-                    <label for="email" class="whiteText">Email:</label>
-                    <input type="email" name="email" id="email" placeholder="Email" >
-                </div>
-        
-                <!-- place of work-->
-                <div class="formWork">
-                    <label for="work" class="whiteText">Place of Work:</label>
-                    <input type="text" name="work" id="work" placeholder="Place of Work">
-                </div>
-                
-                <!-- comments -->
-                <div>
-                    <label for="comments" class="whiteText commentForm">Comments:</label>
-                    <textarea name="comments" id="comments" rows="auto" cols="auto" placeholder="Comments"></textarea>
-                </div>    
-                
-                <!-- submit button -->
-                <div class="formSubmit">
-                    <input class="submit" type="submit" value="Submit">  
-                </div>
+            <!-- last name -->
+            <div class="formLastName">
+                <label for="lastName" class="whiteText">Last Name:</label>
+                <input type="text" id="lastName" name="lastName" placeholder="Last Name">
+            </div>
 
-                
-                
-            </form>
+            <!-- email -->
+            <div class="formEmail">
+                <label for="email" class="whiteText">Email:</label>
+                <input type="email" name="email" id="email" placeholder="Email">
+            </div>
 
-        </main>
+            <!-- place of work-->
+            <div class="formWork">
+                <label for="work" class="whiteText">Place of Work:</label>
+                <input type="text" name="work" id="work" placeholder="Place of Work">
+            </div>
 
-        <footer>
-            <small>&copy;RAM Sanchez</small>
-            <a href="https://www.linkedin.com/in/ram-sanchez-0a5028168/" aria-label="This is a link to RAM's linkedin"><i class="fab fa-linkedin"></i></a>
-            <a href="https://www.instagram.com/ramsanchez96/" aria-label="This is a link to RAM's instagram"><i class="fab fa-instagram"></i></a>
-            <a href="https://www.roadtohire.org/"><img src="img/roadtohirelogo.png" alt="This is the logo and clickable button for Road to Hire's website" class="r2hlogo"></a>
-        </footer>
+            <!-- comments -->
+            <div>
+                <label for="comments" class="whiteText commentForm">Comments:</label>
+                <textarea name="comments" id="comments" rows="auto" cols="auto" placeholder="Comments"></textarea>
+            </div>
 
-    </body>
+            <!-- submit button -->
+            <div class="formSubmit">
+                <input class="submit" type="submit" value="Submit">
+            </div>
+        </form>
+
+    </main>
+
+    <footer class="bottom__footer">
+        <small>&copy;RAM Sanchez</small>
+        <a href="https://www.linkedin.com/in/ram-sanchez-0a5028168/" aria-label="This is a link to RAM's linkedin">
+            <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://www.instagram.com/ramsanchez96/" aria-label="This is a link to RAM's instagram">
+            <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://www.roadtohire.org/">
+            <img src="img/roadtohirelogo.png" alt="This is the logo and clickable button for Road to Hire's website" class="r2hlogo">
+        </a>
+    </footer>
+
+</body>
+
 </html>

@@ -122,6 +122,12 @@ footer a img {
   font-size: 40px;
 }
 
+.bottom__footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
 .bioContainer {
   width: 100%;
   display: flex;
@@ -164,7 +170,7 @@ footer a img {
   justify-content: center;
   align-items: center;
   padding: 15px;
-  margin-left: 30px;
+  margin-left: 15px;
 }
 .mainResume .mainResume__p p {
   font-size: 50px;
@@ -189,10 +195,27 @@ footer a img {
   text-align: center;
 }
 
-.resume__footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
+.mainForm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: center;
+  background-image: url("../img/ram.jpg");
+  height: 85vh;
+}
+.mainForm form {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.63);
+  font-family: "Source Sans Pro", sans-serif;
+  width: 30vw;
+  height: 60vh;
+  font-size: 20px;
+}
+.mainForm form label {
+  display: block;
 }
 
 /*# sourceMappingURL=output.css.map */

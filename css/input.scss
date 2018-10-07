@@ -153,6 +153,12 @@ footer {
   }
 }
 
+.bottom__footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
 //BIO
 
 .bioContainer {
@@ -183,7 +189,7 @@ footer {
   }
 }
 
-//RESUME
+//WORK
 
 .resume__heading {
     margin: 10px auto auto 30px;
@@ -203,7 +209,7 @@ footer {
     justify-content: center;
     align-items: center;
     padding: 15px;
-    margin-left: 30px;
+    margin-left: 15px;
 
     p {
       font-size: 50px;
@@ -232,8 +238,29 @@ footer {
   }
 }
 
-.resume__footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
+//CONTACT
+
+.mainForm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:center;
+    background-image: url("../img/ram.jpg");
+    height:85vh;
+
+    form {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+        background-color: $secondaryColor-Transparent;
+        font-family: $sourceSansPro;
+        width: 30vw;
+        height: 60vh;
+        font-size: 20px;
+
+        label {
+            display: block;
+        }
+    }
 }
