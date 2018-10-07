@@ -147,7 +147,7 @@ footer a img {
 }
 
 .resume__heading {
-  margin: 10px auto auto auto;
+  margin: 10px auto auto 30px;
   font-size: 40px;
   font-family: "Source Sans Pro", sans-serif;
   font-weight: 100;
@@ -164,6 +164,7 @@ footer a img {
   justify-content: center;
   align-items: center;
   padding: 15px;
+  margin-left: 30px;
 }
 .mainResume .mainResume__p p {
   font-size: 50px;
@@ -174,6 +175,7 @@ footer a img {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-flow: column;
 }
 .mainResume .mainResume__button a {
   background-color: #99badd;
@@ -182,6 +184,9 @@ footer a img {
   padding: 10px;
   font-size: 30px;
   font-family: "Source Sans Pro", sans-serif;
+  margin: 10px auto;
+  width: 279px;
+  text-align: center;
 }
 
 .resume__footer {
