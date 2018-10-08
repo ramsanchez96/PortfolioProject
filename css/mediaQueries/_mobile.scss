@@ -1,0 +1,123 @@
+@media (max-width: 575px) {
+    //HEADER
+    .header {
+      height: 150px;
+      .nav__ul {
+        .ul__li--headingOne {
+          width: 100%;
+          text-align: center;
+        }
+      }
+    }
+  
+    //FOOTER
+    footer {
+      height: 150px;
+      small {
+        font-size: 30px;
+      }
+      a {
+        i,
+        img {
+          height: 50px;
+          width: 50px;
+          font-size: 50px;
+        }
+      }
+    }
+  
+    .bottom__footer {
+      position: relative;
+      bottom: auto;
+    }
+  
+    //HOME
+    .homeParagraphSection {
+      height: 200px;
+  
+      p {
+        display: none;
+      }
+    }
+  
+    .mainHomeContainer {
+      flex-flow: column;
+      height: auto;
+  
+      .grow {
+        width: 300px;
+        height: 300px;
+        margin: 15px auto;
+  
+        h3 {
+          font-size: 30px;
+          margin: 1px auto;
+        }
+  
+        p {
+          font-size: 25px;
+        }
+  
+        a {
+          font-size: 40px;
+        }
+      }
+    }
+  
+    //BIO
+    .bioContainer {
+      flex-flow: column;
+  
+      figure {
+        width: 100vw;
+        margin: 10px auto;
+  
+        img {
+          width: 90%;
+          text-align: center;
+        }
+      }
+  
+      section {
+        width: auto;
+        margin: 10px auto;
+      }
+    }
+  
+    //WORK
+  
+    .resume__heading {
+      text-align: center;
+      margin: 10px auto 5px auto;
+    }
+  
+    .mainResume {
+      height: 800px;
+  
+      .mainResume__p {
+        display: none;
+      }
+  
+      .mainResume__button {
+        width: 100%;
+        margin-top: 5px;
+  
+        a {
+          font-size: 50px;
+          font-family: $sourceSansPro;
+        }
+      }
+    }
+  
+    //CONTACT
+  
+    .mainForm {
+      form {
+        width: 60vw;
+        font-size: 30px;
+        input {
+          font-size: 20px;
+        }
+      }
+    }
+  }

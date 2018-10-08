@@ -1,0 +1,24 @@
+.mainForm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: center;
+    background-image: url("../img/ram.jpg");
+    height: 85vh;
+  
+    form {
+      display: flex;
+      flex-flow: column;
+      justify-content: center;
+      align-items: center;
+      background-color: $secondaryColor-Transparent;
+      font-family: $sourceSansPro;
+      width: 30vw;
+      height: 60vh;
+      font-size: 20px;
+  
+      label {
+        display: block;
+      }
+    }
+  }

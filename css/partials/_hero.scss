@@ -1,0 +1,26 @@
+.homeParagraphSection {
+    background-image: url("../img/banner.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% auto;
+    height: 500px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    p {
+      margin: 0;
+      padding: 40px;
+      width: 400px;
+      color: $secondaryColor;
+      background-color: $primaryColor-Transparent;
+      font-size: 20px;
+      font-family: $sourceSansPro;
+  
+      span {
+        font-size: 25px;
+        font-weight: 500;
+      }
+    }
+  }
